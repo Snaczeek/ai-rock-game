@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ai-rock-game/static/css/main.6ddb51c6.css",
+    "main.js": "/ai-rock-game/static/js/main.ff24073c.js",
+    "static/media/init_prompt.txt": "/ai-rock-game/static/media/init_prompt.59c1ea84958d5f10c5d9.txt",
+    "index.html": "/ai-rock-game/index.html",
+    "main.6ddb51c6.css.map": "/ai-rock-game/static/css/main.6ddb51c6.css.map",
+    "main.ff24073c.js.map": "/ai-rock-game/static/js/main.ff24073c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ddb51c6.css",
+    "static/js/main.ff24073c.js"
+  ]
+}
