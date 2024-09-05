@@ -22,7 +22,9 @@ jobs:
       run: npm install
 
     - name: Set environment variable
-      run: echo "REACT_APP_GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
+      run: |
+        echo "REACT_APP_GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
+        echo "CI=false" >> $GITHUB_ENV
 
     - name: Build the app
       run: npm run build

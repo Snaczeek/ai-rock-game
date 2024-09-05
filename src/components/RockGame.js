@@ -98,6 +98,7 @@ const RockGame = () => {
     useEffect(() =>{
         // Gemini api loading and first prompt
         aiRun();        
+
     }, [])
     
     let GameContent = () => {
