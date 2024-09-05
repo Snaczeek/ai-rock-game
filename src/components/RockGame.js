@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 import prompt_txt from '../components/init_prompt.txt';
-import config from '../API_KEY';
 
 const RockGame = () => {
+    const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
     const generationConfig  = {
         responseMimeType: "application/json",
     }
@@ -28,7 +28,7 @@ const RockGame = () => {
         },
       ];
       
-    const genAI = new GoogleGenerativeAI(config.GOOGLE_API_KEY);
+    const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", safetySettings});
     let [chat, setChat] = useState(null)
 

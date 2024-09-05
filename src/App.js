@@ -3,7 +3,7 @@ import RockGame from './components/RockGame'
 
 function App() {
   return (
-      <div className='App' class="bg-neutral-800 h-screen w-screen flex items-center justify-center font-comic">
+      <div className='App bg-neutral-800 h-screen w-screen flex items-center justify-center font-comic'>
         <RockGame />
     </div>
   )
